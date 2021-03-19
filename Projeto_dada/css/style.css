@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
+
+.row{
+    margin:0;
+}
+
+/* Barra de Navegação */
+header, .navbar {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+}
+
+.navbar-brand{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px 40px;
+}
+
+.navbar-brand h1{
+    color: rgb(219, 53, 89);
+}
+
+.navbar-brand h1 strong{
+    color: rgb(177, 170, 172);
+}
+
+.navbar-brand:hover > h1{
+    color: rgb(201, 28, 66);
+}
+
+.navbar-brand:hover > h1 strong{
+    color: rgb(158, 156, 156);
+}
+
+
+.navbar i {
+    font-size: 30px;
+    padding: 0px 5px;
+    color: rgb(219, 53, 89);
+    transition: 0.3s;
+}
+
+.navbar i:hover{
+    color: rgb(182, 26, 59);
+}
+
+#navbar-links{
+    margin-right: 50px;
+}
+
+/* Sobre a empresa */
+#about-area {
+    background-color: #ece9ec;
+    margin-top: 50px;
+  }
+  
+.main-title {
+    color: rgb(41, 41, 41);
+    margin-top: 100px;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+  
+.main-title::after {
+    content: "";
+    border-top: 2px solid rgb(219, 53, 89);
+    width: 15%;
+    position: absolute;
+    margin-top: 93px;
+    top: 60px;
+    left: 42.5%;
+}
+  
+.about-title {
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+  
+#about-list {
+    list-style: none;
+    padding-left: 0;
+}
+  
+#about-list li {
+    line-height: 30px;
+}
+  
+  #about-list i {
+    color:rgb(219, 53, 89);
+    margin-right: 15px;
+  }
