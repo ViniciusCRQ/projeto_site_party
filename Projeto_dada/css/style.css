@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800&display=swap');
 
 .row{
     margin:0;
 }
 
+.container-fluid{
+    padding: 0px;
+}
+
+main{
+    font-family: 'Montserrat', sans-serif;
+}
 /* Barra de Navegação */
 header, .navbar {
     background-color: #ffffff;
@@ -54,12 +61,15 @@ header, .navbar {
 #about-area {
     background-color: #ece9ec;
     margin-top: 50px;
+    padding-bottom: 40px;
   }
   
 .main-title {
-    color: rgb(41, 41, 41);
+    color: rgba(41, 41, 41, 0.829);
     margin-top: 100px;
     font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -94,3 +104,92 @@ header, .navbar {
     color:rgb(219, 53, 89);
     margin-right: 15px;
   }
+
+/* parallax - prices */
+
+#prices{
+    height: 500px;
+}
+
+#prices .container-fluid, #prices .row{
+    height: 100%;
+}
+
+#price-img{
+    background-size: cover;
+    height: 100%;
+}
+
+#price-text{
+    text-align: center;
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+}
+
+
+#price-text .col-md-2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+}
+
+#price-text .card{
+    margin-top: 100px;
+    display: block;
+    width: 150px;
+    height: 160px;
+    padding: 10px;
+}
+
+
+
+#price .apply-box{
+    padding: 70px 50px;
+    text-align: center;
+}
+
+.price-title{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.486);
+    padding: 10px;
+}
+
+#row-secundary{
+    position: absolute;
+    margin-top: -42px;
+    padding: 100px 10px 0px 0px;
+}
+
+.card{
+    border: 2px solid rgba(0, 0, 0, 0.486); 
+}
+.card .plano{
+    color: rgb(255, 255, 255);
+    background:rgb(219, 53, 89);
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    font-weight: 900;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.card .preco h3{
+    font-weight: 100;
+}
+
+.card .preco {
+    margin-top: 16px;
+    font-size: 25px;
+}
+
+.card .preco strong{
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(219, 53, 89);
+}
