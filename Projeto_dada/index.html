@@ -26,7 +26,8 @@
         <!--Paralax-->
         <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
         <link rel="stylesheet" href="./css/style.css">
-        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
     </head>
 </head>
@@ -39,7 +40,7 @@
               <h1>Party<strong>100</strong></h1>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <i class="fas fa-ellipsis-v"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
               <div class="navbar-nav">
@@ -78,38 +79,44 @@
               </div>
             </div>
         </div>
+        <!--Prices-->
         <div id="prices">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6 apply-box" id="price-img"></div>
-              <div class="col-md-6 apply-box" id="price-text">
-                <div class="price-title">
-                  <h3>Planos</h3>
-                </div>
-                <div class="row" id="row-secundary">
+              <div class="col-md-6 apply-box" id="price-text" >
+                  <h3 class="price-title">Planos</h3>
+                <div class="row" id="row-secundary" data-aos="fade-down">
                   <div class="col-md-2 col-sm-6">
                     <div class="card">
+                      <a href="#" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
                         <h3 class="plano">1</h3>  
                         <h3 class="preco">R$<strong>70</strong>,00</h3>
                     </div>
-                  </div>
+                  </div></a>
                   <div class="col-md-2 col-sm-6">
                     <div class="card">
+                      <a href="#" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
                       <h3 class="plano">2</h3>  
                       <h3 class="preco">R$<strong>120</strong>,00</h3>
-                    </div> 
-                  </div>
+                    </div>
+                  </div></a>
                   <div class="col-md-2 col-sm-6">
                     <div class="card">
+                      <a href="#" onmouseover="mouseOver3()" onmouseout="mouseOut3()">
                       <h3 class="plano">3</h3>  
                       <h3 class="preco">R$<strong>150</strong>,00</h3>
                     </div>
-                  </div>
+                  </div></a>
                 </div>
+                <figcaption id="price-config" data-aos="fade-down">Passe o mouse por cima das opções abaixo para obter mais informações!</figcaption> 
               </div>
               </div>
             </div>
           </div>
+          <!-- Entre em Contato -->
+
+
         </div>
     </main>
     <script src="./js/script.js"></script>

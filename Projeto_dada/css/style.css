@@ -108,7 +108,7 @@ header, .navbar {
 /* parallax - prices */
 
 #prices{
-    height: 500px;
+    height: 400px;
 }
 
 #prices .container-fluid, #prices .row{
@@ -129,6 +129,7 @@ header, .navbar {
 
 
 #price-text .col-md-2{
+    
     margin-left: auto;
     margin-right: auto;
     width: 180px;
@@ -145,26 +146,27 @@ header, .navbar {
 
 
 #price .apply-box{
-    padding: 70px 50px;
+    padding: 70px 40px;
     text-align: center;
 }
 
 .price-title{
+    font-weight: 800;
+    color: rgba(7, 7, 7, 0.664);
+    position: inherit;
+    padding-top: 60px;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
-    color: rgba(0, 0, 0, 0.486);
-    padding: 10px;
 }
 
 #row-secundary{
     position: absolute;
-    margin-top: -42px;
+    margin-top: -100px;
     padding: 100px 10px 0px 0px;
 }
 
 .card{
-    border: 2px solid rgba(0, 0, 0, 0.486); 
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.288);
 }
 .card .plano{
     color: rgb(255, 255, 255);
@@ -192,4 +194,27 @@ header, .navbar {
     font-size: 32px;
     font-weight: 700;
     color: rgb(219, 53, 89);
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+}
+
+.card a:hover{
+    color: rgb(182, 26, 59);
+}
+
+.card a:hover > .plano{
+    transition: .3s;
+    background-color: rgb(255, 255, 255);
+    color: rgb(219, 53, 89);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.452);
+}
+
+#price-text figcaption{
+    transition: .4s;
+    font-size: 12px;
+    margin-top: 30px;
 }
